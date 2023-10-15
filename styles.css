@@ -1,0 +1,48 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif !important;
+}
+
+nav.navbar {
+  background-color: #83a4e2 !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+@media (max-width: 991px) {
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column-reverse;
+  }
+}
+
+nav a {
+  color: rgba(0, 0, 0, 0.55) !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+a.navbar-brand {
+    color: blue !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+
+.nav-link {
+  padding: 16px !important;
+}
