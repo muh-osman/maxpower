@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 nav.navbar {
-  /* background-color: #83a4e2 !important; */
+  background-color: #E6E6E6 !important;
 }
 
 .navbar-collapse {
@@ -34,13 +34,14 @@ nav.navbar {
 }
 
 nav a {
-  color: #5f6579 !important;
+  /* color: #5f6579 !important; */
+  color: #070707 !important;
   font-size: 20px !important;
   font-weight: 500 !important;
 }
 
 nav a:hover {
-  color: #212529 !important;
+  color: #000 !important;
 }
 
 a.navbar-brand {
@@ -294,6 +295,124 @@ p.tail {
     width: 164px;
   }
 }
+
+
+/* Section a */
+section.a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.a div{
+  width: 50%;
+}
+
+section.a img{
+  width: 100%;
+
+}
+
+.text-a {
+  padding: 16px;
+}
+
+.text-a p{
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+section.a p:nth-child(2){
+  font-weight: 800;
+}
+
+.text-a p:nth-child(2){
+  color: #fdc220;
+}
+
+@media (max-width: 991.98px) {
+
+  section.a {
+    flex-direction: column;
+  }
+
+  section.a div{
+    width: 100%;
+  }
+
+  section.a p{
+    text-align: center;
+    font-size: 28px;
+  }
+
+  section.a div:nth-child(1) {
+    order: 1;
+  }
+}
+
+/* Section b */
+section.b {
+  padding: 16px;
+  background-color: #E6E6E6;
+}
+
+section.b  p{
+  font-size: 32px;
+  font-weight: 500;
+}
+
+section.b p:nth-child(2){
+  font-size: 32px;
+  font-weight: 800;
+  color: #fdc220;
+}
+
+section.b div div {
+  text-align: center;
+  margin-top: 32px;
+}
+
+section.b a{
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #fdc220;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 32px;
+}
+
+section.b a:hover{
+  background-color: #ffbb00;
+}
+
+@media (max-width: 991.98px) {
+  section.b{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */
