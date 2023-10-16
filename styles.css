@@ -381,6 +381,8 @@ section.b a{
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 32px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 section.b a:hover{
@@ -391,10 +393,167 @@ section.b a:hover{
   section.b{
     text-align: center;
   }
+
+  section.b p{
+    font-size: 28px;
+  }
 }
 
 
 
+/* Section c */
+section.c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.c div {
+  width: 50%;
+}
+
+section.c p {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+section.c p:nth-child(2) {
+  font-weight: 800;
+  color: #fdc220;
+}
+
+section.c img {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  section.c {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  section.c div {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  section.c div:nth-child(1) {
+    order: 1;
+  }
+
+  section.c p {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+}
+
+
+/* Section d */
+section.d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5E5E5;
+  padding: 0 !important;
+}
+
+section.d div {
+  width: 50%;
+}
+
+section.d div:nth-child(2) {
+  padding: 16px;
+}
+
+section.d img {
+  width: 100%;
+}
+
+section.d p {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+section.d p:nth-child(2) {
+  color: #fdc220;
+  font-weight: 800;
+}
+
+@media (max-width: 991.98px) {
+
+  section.d {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section.d div {
+    width: 100%;
+  }
+
+  section.d p {
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
+/* Section e */
+section.e {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.e div:nth-child(1) {
+  width: 80%;
+}
+section.e div:nth-child(2) {
+  width: 20%;
+}
+
+section.e img {
+  width: 100%;
+}
+
+section.e p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section.e p:nth-child(5) {
+  color: red;
+}
+
+section.e a{
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #fdc220;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 35px;
+  border-radius: 32px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+section.e a:hover{
+  background-color: #ffbb00;
+}
+
+section.e span:nth-child(1) {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+section.e span:nth-child(2) {
+  background-color: #fdc220;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 16px;
+}
 
 
 
