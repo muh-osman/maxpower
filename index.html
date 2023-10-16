@@ -64,6 +64,7 @@
     <!-- Form & Offer -->
     <section class="form-and-offer container">
 
+      <!-- Offer -->
       <div class="offer-container">
           <div class="countr_box">
 
@@ -99,49 +100,55 @@
           <div >
             <img src="./assets/images/3.png" alt="product">
             <p>ثلاث عبوات</p>
-            <p>بـ 450 بدل <span>1160</span></p>
+            <p class="price">بـ 450 بدل <span>1160</span></p>
           </div>
           <div>
             <img src="./assets/images/2.png" alt="product">
             <p>عبوتين</p>
-            <p>بـ 300 بدل <span>760</span></p>
+            <p class="price">بـ 300 بدل <span>760</span></p>
           </div>
           <div>
             <img src="./assets/images/1.png" alt="product">
             <p>عبوة</p>
-            <p>بـ 180 بدل <span>380</span></p>
+            <p class="price">بـ 180 بدل <span>380</span></p>
           </div>
         </div>
 
         <p class="tail">.جنسنج تريبولوس العلامة التجارية الاكثر مبيعا لعام 2019</p>
       </div>
 
-
+      <!-- form -->
       <div class="form-container">
-        <form class="text-center">
+        <div class="success-overlay" id="success-overlay">
+          <h1>شكرا لك</h1>
+          <h2>سيتم التواصل معك لتأكيد الطلب</h2>
+        </div>
+        <form class="text-center" id="order-form" name="submit-to-google-sheet">
 
           <h2>أطلب الآن</h2>
           <h3>آمن لمرضى الضغط والسكري</h3>
 
           <div class="mb-4">
-            <input dir="rtl" name="name" placeholder="الاسم الكامل" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input dir="rtl" name="name" placeholder="الاسم الكامل" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
           </div>
+          <!-- hidden input -->
+          <input dir="rtl" name="product" value="جنسنج تريبولوس" type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 
           <div class="input-group mb-4">
             <span class="input-group-text" id="basic-addon1">+218</span>
-            <input dir="rtl" name="phone" placeholder="رقم الهاتف" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input dir="rtl" name="phone" placeholder="رقم الهاتف" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
           </div>
 
           <div class="mb-4">
-            <textarea dir="rtl" name="address" placeholder="العنوان" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea dir="rtl" name="address" placeholder="العنوان" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
           </div>
 
           <div class="mb-4">
-            <input dir="rtl" name="number" placeholder="الكمية" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input dir="rtl" name="quantity" placeholder="الكمية" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             <div id="emailHelp" dir="rtl" class=" mt-2 form-text text-white">جميع البيانات سرية ولا يتم مشاركتها مع أي طرف.</div>
           </div>
 
-          <button type="submit" class="btn btn-primary">أطلب الآن</button>
+          <button type="submit" class="btn btn-primary" id="order-btn">أطلب الآن</button>
         </form>
       </div>
 
@@ -161,6 +168,11 @@
 
 
 
+
+    <footer>
+      <p>© 2023 Ginseng جنسنج تروبيلوس . جميع الحقوق محفوظة</p>
+    </footer>
+    
     <script src="./app.js"></script>
     <!-- Bootstrap -->
     <script src="./assets/bootstrap.bundle.min.js"></script>
