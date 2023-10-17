@@ -951,6 +951,165 @@ section.k div:nth-child(1) p:nth-child(3) {
   }
 }
 
+/* Section l */
+section.l {
+  display: flex;
+  align-items: center;
+  background-color: #20364d;
+  text-align: center;
+}
+
+section.l img {
+  width: 100%;
+}
+
+section.l p {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+section.l div {
+  width: 50%;
+}
+
+section.l div:nth-child(2) p {
+  font-weight: 800;
+}
+
+section.l div:nth-child(2) p:nth-child(3) {
+  color: #fdc220;
+}
+
+section.l div:nth-child(1) {
+  padding: 16px;
+}
+
+section.l div:nth-child(1) p {
+  margin-bottom: 32px;
+}
+
+section.l div:nth-child(1) p:nth-child(1) {
+  color: #20364d;
+  background-color: #fdc220;
+  width: fit-content;
+  margin: auto;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+section.l div:nth-child(1) p:nth-child(2) {
+  color: #fdc220;
+  font-weight: 800;
+}
+
+@media (max-width: 575.98px) {
+  section.l div:nth-child(1) p {
+    font-size: 16px;
+    margin-bottom: 8px !important;
+  }
+
+  section.l div:nth-child(2) p {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+/* Section m */
+section.m {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+section.m img {
+  width: 100%;
+}
+
+section.m div:nth-child(1) {
+  align-self: flex-end;
+  width: 25%;
+}
+
+section.m div:nth-child(2) {
+  width: 75%;
+  padding: 32px;
+}
+
+section.m div:nth-child(2) p {
+  margin-bottom: 32px;
+}
+
+section.m span {
+  font-weight: 800;
+}
+
+@media (max-width: 991.98px) {
+  section.m {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section.m {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section.m {
+    font-size: 15px;
+  }
+
+  section.m div:nth-child(2) p {
+    margin-bottom: 8px;
+  }
+
+  section.m div {
+    width: 50% !important;
+  }
+
+  section.m div:nth-child(2) {
+    padding: 16px;
+  }
+}
+
+/* Section n */
+section.n {
+  background-color: #fdc220;
+  padding: 32px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+section.n p {
+  margin: 8px;
+}
+
+section.n div:nth-child(1) {
+  text-align: center;
+  border-bottom: 5px solid #fff;
+  margin-bottom: 32px;
+
+}
+
+section.n div:nth-child(1) p:nth-child(2){
+  font-weight: 900;
+}
+
+section.n div:nth-child(1) p:nth-child(3){
+  margin-bottom: 32px;
+}
+
+
+
+
+
+
 
 
 
