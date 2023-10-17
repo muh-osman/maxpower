@@ -120,8 +120,9 @@
       <!-- form -->
       <div class="form-container">
         <div class="success-overlay" id="success-overlay">
-          <h1>شكرا لك</h1>
-          <h2>سيتم التواصل معك لتأكيد الطلب</h2>
+          <img src="./assets/images/success-green-check-mark-icon.webp" alt="success icon">
+          <h1>تم تسجيل طلبك بنجاح</h1>
+          <h2>سوف يقوم احد ممثلي خدمة <br /> العملاء بالتواصل معك لاحقا</h2>
         </div>
         <form class="text-center" id="order-form" name="submit-to-google-sheet">
 
@@ -148,7 +149,13 @@
             <div id="emailHelp" dir="rtl" class=" mt-2 form-text text-white">جميع البيانات سرية ولا يتم مشاركتها مع أي طرف.</div>
           </div>
 
-          <button type="submit" class="btn btn-primary" id="order-btn">أطلب الآن</button>
+              <div class="btn-and-loader-box">
+                    <div class="spinner-border text-warning" role="status" id="text-warning">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  
+                  <button type="submit" class="btn btn-primary" id="order-btn">أطلب الآن</button>
+              </div>
         </form>
       </div>
 

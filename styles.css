@@ -93,6 +93,21 @@ textarea {
   font-size: 18px !important;
 }
 
+.btn-and-loader-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.text-warning {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: .2s;
+}
+
 .btn_loader {
   cursor: not-allowed !important;
   background-color: #5f6579 !important;
@@ -110,10 +125,18 @@ textarea {
   color: #fff;
   transition: 0.4s;
   position: absolute;
-  background-color: #0d6efd;
+  background-color: #20364b;
   z-index: 9999999;
   left: 0;
   top: 0;
+}
+
+.success-overlay img {
+  width: 75px;
+}
+
+.success-overlay h2 {
+  color: #fff;
 }
 
 /* Offer */
