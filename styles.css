@@ -1081,7 +1081,7 @@ section.m span {
 /* Section n */
 section.n {
   background-color: #fdc220;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -1116,6 +1116,10 @@ section.n div:nth-child(2) p{
   font-size: 28px;
 }
 
+section.n ul {
+  padding: 0;
+}
+
 section.n li {
   font-weight: 600;
 }
@@ -1132,6 +1136,15 @@ section.n li {
 section.n div:nth-child(2) p{
   font-size: 18px;
 }
+
+section.n div:nth-child(1) {
+  padding: 16px 0px;
+}
+
+section.n div:nth-child(1) p {
+  margin: 0px !important;
+}
+
 
 }
 
