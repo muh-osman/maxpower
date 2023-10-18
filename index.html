@@ -146,8 +146,15 @@
             <textarea dir="rtl" name="address" placeholder="العنوان" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
           </div>
 
-          <div class="mb-4">
-            <input dir="rtl" name="quantity" placeholder="الكمية" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <div class="mb-4" dir="rtl">
+            <select class="form-select" aria-label="Default select example" name="quantity">
+              <option selected>اختر العدد</option>
+              <option value="1">عبوة واحدة بـ 180 دل 💊</option>
+              <option value="2">عبوتين بـ 300 دل 💊💊</option>
+              <option value="3">ثلاث عبوات بـ 450 دل 💊💊💊</option>
+              <option value="قطع متعدد">قطع متعدد تخفيض خاص 🚚</option>
+            </select>
+            <!-- <input dir="rtl" name="quantity" placeholder="الكمية" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required> -->
             <div id="emailHelp" dir="rtl" class=" mt-2 form-text text-white">جميع البيانات سرية ولا يتم مشاركتها مع أي طرف.</div>
           </div>
 
