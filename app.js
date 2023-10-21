@@ -29,9 +29,6 @@ let counter = setInterval(() => {
   }
 }, 1000);
 
-
-
-
 // Send form data
 const form = document.forms["submit-to-google-sheet"];
 const btn = document.getElementById("order-btn");
@@ -41,21 +38,20 @@ const loader = document.getElementById("text-warning");
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbxYZzy-4vLImnYu9waqVDfFyXXQkTeqIfIyiKAiVjxg6VHwQigKNjtF5nzQI632MMsV/exec";
 
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   btn.classList.add("btn_loader");
-  loader.style.opacity = "1"
-  
+  loader.style.opacity = "1";
+
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-  .then((response) => {
-    overlay.style.height = "100%";
-    loader.style.opacity = "0"
-  })
-  
-  .catch((error) => {
-    console.error("Error!", error.message);
-    btn.classList.remove("btn_loader");
-    loader.style.opacity = "0"
+    .then((response) => {
+      overlay.style.height = "100%";
+      loader.style.opacity = "0";
+    })
+
+    .catch((error) => {
+      console.error("Error!", error.message);
+      btn.classList.remove("btn_loader");
+      loader.style.opacity = "0";
     });
 });
